@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Advanced Portfolio | Raffy Gatal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+            <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Raf Gats</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+            <!-- Hero Section -->
+    <section id="home" class="hero-section"> <!-- home Section-->
+        <div class="hero-content">
+            <h1>Hello, I'm <span class="highlight">Raffy Gatal</span></h1>
+            <p>A Web developer passionate about building simple, <br>responsive websites and continuously improving my skills.</p><br>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+            <!-- About Section --> 
+     <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>Hi, I’m Raffy Gatal!  
+    I’m starting my journey as a web developer, learning how to build websites and bring creative ideas to life online. Right now, I’m focusing on the basics—HTML, CSS, and JavaScript—to understand how web pages are structured and styled.
+    I’m excited to grow my skills, explore modern frameworks, and eventually create projects that are both useful and visually engaging. As a beginner, I’m open to learning from others, collaborating, and improving step by step.</p>
+    </section>
+
+    <!-- Skills Section (hidden by default) -->
+<section id="skills" style="display:none;">
+  <h2>My Skills</h2>
+  <div class="skills-container">
+    <div class="skill-card"><i class="fab fa-html5"></i><h3>HTML</h3></div>
+    <div class="skill-card"><i class="fab fa-css3-alt"></i><h3>CSS</h3></div>
+    <div class="skill-card"><i class="fab fa-js-square"></i><h3>JavaScript</h3></div>
+    <div class="skill-card"><i class="fab fa-git-alt"></i><h3>Git & GitHub</h3></div>
+    <div class="skill-card"><i class="fas fa-mobile-alt"></i><h3>Responsive Design</h3></div>
+  </div>
+</section>
+
+        <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="images/html.png" alt="Html">
+                <h3>Project One</h3>
+                <p>HTML stands for HyperText Markup Language, and it is the standard language used to structure and display content on web pages. It defines elements like headings, paragraphs, links, images, and more, making it one of the core building blocks of the web.</p>
+            </div>
+                <div class="project-card">
+                <img src="images/css.png" alt="Css">
+                <h3>Project Two</h3>
+                <p>CSS stands for Cascading Style Sheets. It is the language used to style and format web pages, controlling how HTML elements look on screen, paper, or other media..</p>
+            </div>
+            <div class="project-card">
+                <img src="images/javascript--v1.png" alt="Javascript">
+                <h3>Project Three</h3>
+                <p>JavaScript is a programming language that makes websites interactive and dynamic. Unlike HTML (structure) and CSS (style), JavaScript adds behavior—allowing web pages to respond to user actions, update content in real time, and even run complex applications.</p>
+            </div>
+        </div>
+    </section>
+        <section class="video-section">
+  <h2>My Video</h2>
+  <div class="video-container">
+   <iframe 
+   width="560" height="315" 
+   src="https://www.youtube-nocookie.com/embed/gT0Lh1eYk78?start=22" 
+   title="YouTube video player" 
+   frameborder="0" 
+   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+   allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+            <!-- Contact Section -->
+<section id="contact" class="contact-section">
+
+    <h2>Contact Me</h2>
+    <p>I'm always open to new opportunities and collaborations.</p>
+
+    <div class="contact-wrapper">
+
+        <!-- RIGHT: Contact Info -->
+        <div class="contact-info">
+            <div class="info-item">
+                <h3>Address</h3>
+                <p>Purok 6 Barangay Talairon, 7207 Oroquieta City</p>
+                <p>Misamis Occidental, Philippines</p> 
+            </div>
+            <div class="info-item">
+                <h3>Phone</h3>
+                <p>+639690695937</p>
+            </div>
+            <div class="info-item">
+                <h3>Email</h3>
+                <p>raffygatal42@gmail.com</p>
+            </div>
+            <div class="info-item social">
+                        <h3>Follow Me</h3>
+                    <a href="https://facebook.com" class="social">
+                    <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" class="social">
+                    <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com" class="social">
+                    <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com" class="social">
+                    <i class="fab fa-github"></i>    
+                    </a>
+            </div>
+        </div>
+
+        <!-- LEFT: Contact Form -->
+        <form class="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+            <button type="reset" id="resetButton">Reset</button>
+        </form>
+
+    </div>
+
+</section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Raffy Gatal | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

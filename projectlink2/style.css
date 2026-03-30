@@ -1,0 +1,479 @@
+
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1a0b0b;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0E1435;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFA500;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: #000;
+    font-weight: 700px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #0E1435  !important;
+    color: #ffffff !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url("images/wil-nard.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 40px 0 0 100px; /* combine top padding and left */
+    animation: fadeIn 2s ease-in;
+}
+
+.hero-content h1 {
+    max-width: 600px;
+    font-size: 48px;
+    margin-left: 0;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.hero-content .highlight {
+    color:#FFA500;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #D3D3D3;
+    margin: 100px;
+    margin-top: 3px;
+    margin: 0 0 30px 0; /* top:0, bottom:30px */
+}
+
+.btn {
+    background-color: transparent;      /* hollow inside */
+    color: #FF6347;                   
+    border: 2px solid #fff;          /* border line */
+    border-radius: 50px;              
+    padding: 12px 30px;
+    font-size: 15px;              
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color:#1c2a6b;
+    color: #ffffff;
+     transform: translateY(-2px);
+}
+
+/* About Section */
+.about-section {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    font-weight: 700px;
+    margin-bottom: 20px;
+    color: #1a0b0b;
+
+}
+
+.about-section p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* centers content horizontally */
+    justify-content: center; /* optional: vertical centering inside section */
+    text-align: center;  /* centers headings and text */
+    padding: 80px 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* centers skill cards horizontally */
+    gap: 30px; /* space between cards */
+}
+
+.skill-card {
+    width: 150px;          /* smaller so they fit in center nicely */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #007bff;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 60px 20px;           /* more top/bottom spacing */
+    background-color:#D3D3D3;
+    text-align: center;
+}
+
+/* Projects Section Title */
+.projects-section h2 {
+    margin-top: 30px;              /* space above the title */
+    margin-bottom: 40px;           /* space below the title */
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #1a0b0b;
+}
+
+/* Project Cards Container */
+.project-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;                      /* space between cards */
+}
+
+/* Individual Project Card */
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    flex: 0 1 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Card Image */
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Project Card Title */
+.project-card h3 {
+    font-size: 24px;
+    margin: 15px 0 10px 0;          /* top/bottom spacing */
+    color: #333;
+}
+
+/* Project Card Description */
+.project-card p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Video Section */
+.video-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;   /* optional max width */
+    margin: 0 auto;     /* centers container */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ===================== Responsive ===================== */
+@media (max-width: 1024px) {
+    .project-cards {
+        gap: 40px;                   /* slightly smaller gap on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 80px 20px;
+    }
+
+    .projects-section h2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 28px;
+    }
+
+    .project-cards {
+        flex-direction: column;       /* stack cards vertically */
+        gap: 30px;                    /* smaller gap between stacked cards */
+    }
+
+    .project-card {
+        width: 100%;                  /* full width for small screens */
+        max-width: 400px;             /* optional: limit max width */
+        margin: 0 auto;
+    }
+
+    /* Video Section Responsive */
+    .video-container iframe {
+        height: 250px;               /* mobile-friendly height */
+    }
+
+    .video-section h2 {
+        font-size: 28px;             /* smaller title on mobile */
+    }
+
+    .video-section p {
+        font-size: 16px;             /* smaller paragraph */
+    }
+}
+/* Contact Section */
+.contact-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1b1b1b, #0E1435);
+    text-align: center;
+    color: white;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #f8f9fa;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: black;
+    outline: none;
+    border-color: #0E1435;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #aaa;
+}
+
+.contact-form button {
+    background-color: #1c2a6b;;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #007bff;
+    transform: translateY(-2px);
+}
+
+/* Contact Info Layout */
+.contact-wrapper {
+    display: flex;
+    gap: 40px;           /* space between form and contact info */
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;      /* allows stacking on smaller screens */
+}
+
+/* Contact Form (Left) */
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Contact Info (Right) */
+.contact-info {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;            
+}
+
+/* Individual Info Cards */
+.contact-info .info-item {
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contact-info .info-item h3 {
+    margin-top: auto;
+    font-size: 18px;
+    color: #FFCA22;
+}
+
+.contact-info .info-item p,
+.contact-info .info-item a {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 3px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column; /* stack form and info vertically */
+        gap: 30px;
+    }
+
+    .contact-info {
+        max-width: 100%;
+        gap: 5px; /* keep items close even on mobile */
+    }
+}
+
+/* Contact Layout */
+.contact-wrapper {
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Left (form) */
+.contact-form {
+    flex: 1;
+}
+
+/* Right (info) */
+.contact-info {
+    flex: 1;
+    max-width: 400px;
+
+    display: flex;
+    flex-direction: column; /* stack items vertically */
+    gap: 20px;
+}
+  .info-item.social a {
+  display: inline-flex;        /* FIX: horizontal layout */
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #1c2a6b;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.info-item.social a:hover {
+  background-color: #007bff;
+  transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+  background-color: #1b1b1b;
+  color: #bbb;
+  padding: 25px;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+footer p {
+    font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
