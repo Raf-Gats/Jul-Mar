@@ -244,6 +244,8 @@ a:hover {
 
 .video-container {
     position: relative;
+    display: flex;
+    justify-content: center;
     width: 100%;
     max-width: 800px;   /* optional max width */
     margin: 0 auto;     /* centers container */
@@ -253,7 +255,6 @@ a:hover {
 
 .video-container iframe {
     position: absolute;
-    justify-content: center;
     top: 0;
     left: 0;
     width: 400px;
