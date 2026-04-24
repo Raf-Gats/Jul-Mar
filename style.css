@@ -286,74 +286,56 @@ a:hover {
         margin: 0 auto;
     }
 /* ===================== CONTACT SECTION ===================== */
-
 .contact-section {
-  padding: 80px 20px;
+  padding: 60px 20px;
   background: linear-gradient(135deg, #1b1b1b, #0E1435);
   color: white;
 }
 
-/* Title */
 .contact-section h2 {
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 32px;
 }
 
-/* Subtitle */
 .contact-section p {
   text-align: center;
-  margin-bottom: 40px;
-  color: #ccc;
+  margin-bottom: 30px;
 }
 
-/* ===================== LAYOUT ===================== */
-
-.contact-wrapper {
+/* ===================== MAIN LAYOUT ===================== */
+.main-layout {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
-/* LEFT (optional) */
+/* LEFT */
 .left-section {
   flex: 1;
 }
 
-/* CENTER (FORM) */
+/* CENTER */
 .center-section {
   flex: 2;
-  min-width: 300px;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  border: none;
-  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .contact-form button {
+  padding: 10px;
+  width: 100%;
   background: #1c2a6b;
   color: white;
-  padding: 12px;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
 }
 
-.contact-form button:hover {
-  background: #007bff;
-}
-
-/* RIGHT (INFO) */
+/* RIGHT */
 .right-section {
   flex: 1;
-  min-width: 250px;
 }
 
 .contact-info {
@@ -363,59 +345,39 @@ a:hover {
 }
 
 .info-item h3 {
-  color: #FFE900;
-  font-size: 16px;
+  color: yellow;
 }
 
-.info-item p,
-.info-item a {
-  color: #fff;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-/* ===================== SOCIAL ===================== */
-
-.social {
-  display: flex;
-  gap: 10px;
-}
-
-.social a {
+/* SOCIAL ICONS */
+.info-item.social a {
+  display: inline-flex;
   width: 40px;
   height: 40px;
   background: #1c2a6b;
-  display: flex;
+  color: white;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: white;
-  transition: 0.3s;
+  margin: 5px;
+  text-decoration: none;
 }
 
-.social a:hover {
+.info-item.social a:hover {
   background: #007bff;
-  transform: scale(1.1);
 }
 
-/* ===================== FOOTER ===================== */
-
+/* FOOTER */
 footer {
   background: #111;
   color: white;
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+  padding: 15px;
 }
 
-footer p {
-  font-size: 14px;
-}
-
-/* ===================== RESPONSIVE ===================== */
-
-@media (max-width: 768px) {
-  .contact-wrapper {
+/* MOBILE */
+@media(max-width:768px){
+  .main-layout {
     flex-direction: column;
   }
 }
+
