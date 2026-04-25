@@ -366,13 +366,20 @@ a:hover {
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 15px;
 }
+
+.info item {
+  margin-bottom: 10px;
 
 .info-item h3 {
   color: yellow;
   margin-bottom: 5px;
 }
+
+.info-item p {
+  margin: 2px 0px;
+  line-height: 1.4;
 
 /* SOCIAL */
 .info-item.social a {
