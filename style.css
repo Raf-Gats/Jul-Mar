@@ -288,73 +288,93 @@ a:hover {
 
 } /* ✅ CLOSE MEDIA QUERY HERE */
 
-/* ===================== CONTACT SECTION ===================== */
+/* CONTACT SECTION */
 .contact-section {
-  padding: 60px 20px;
+  padding: 100px 20px 60px;
   background: linear-gradient(135deg, #1b1b1b, #0E1435);
   color: white;
+  text-align: center;
 }
 
 .contact-section h2 {
-  text-align: center;
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
 .contact-section p {
-  text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  color: #ccc;
 }
 
-/* ===================== MAIN LAYOUT ===================== */
+/* LAYOUT */
 .main-layout {
   display: flex;
-  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
   flex-wrap: wrap;
-  margin-top: 30px;
 }
 
-/* LEFT */
-.left-section {
-  flex: 1;
-}
-
-/* CENTER */
+/* FORM */
 .center-section {
-  flex: 2;
+  flex: 1;
   max-width: 500px;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  min-height: 120px
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 0 2px #007bff;
 }
 
 .contact-form button {
-  padding: 10px;
-  width: 100%;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
   background: #1c2a6b;
   color: white;
-  border: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-/* RIGHT */
+.contact-form button:hover {
+  background: #007bff;
+}
+
+/* RIGHT SIDE */
 .right-section {
   flex: 1;
+  max-width: 400px;
+  text-align: left;
 }
 
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
 .info-item h3 {
   color: yellow;
+  margin-bottom: 5px;
 }
 
-/* SOCIAL ICONS */
+/* SOCIAL */
 .info-item.social a {
   display: inline-flex;
   width: 40px;
@@ -364,8 +384,8 @@ a:hover {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  margin: 5px;
-  text-decoration: none;
+  margin-right: 10px;
+  transition: 0.3s;
 }
 
 .info-item.social a:hover {
@@ -381,9 +401,15 @@ footer {
 }
 
 /* MOBILE */
-@media(max-width:768px){
+@media (max-width: 768px) {
   .main-layout {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .right-section {
+    text-align: center;
   }
 }
+
 
