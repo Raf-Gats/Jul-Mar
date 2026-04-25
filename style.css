@@ -369,9 +369,9 @@ a:hover {
   gap: 15px;
 }
 
-.info item {
+.info-item {
   margin-bottom: 10px;
-
+}
 .info-item h3 {
   color: yellow;
   margin-bottom: 5px;
@@ -380,7 +380,7 @@ a:hover {
 .info-item p {
   margin: 2px 0px;
   line-height: 1.4;
-
+}
 /* SOCIAL */
 .info-item.social a {
   display: inline-flex;
